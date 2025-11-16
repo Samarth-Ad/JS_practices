@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <button id="stop"></button>
+  </body>
+  <script>
+    // window.setTimeout(() => {
+    //   console.log("In setTimeout : After 2 secs");
+    // }, 2000);
+
+    // ye chalta hi jayega
+    // window.setInterval(()=>{
+    //     console.log("In SetInterval")
+    // },1)
+
+    let change_heading = function () {
+      window.document.querySelector("h1").innerHTML = "ing-head";
+    };
+
+    const change_head = setTimeout(change_heading,5000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(change_head)
+        console.log("changed-head stopped")
+    })
+
+  </script>
+</html>
