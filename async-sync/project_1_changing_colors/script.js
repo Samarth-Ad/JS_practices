@@ -1,6 +1,6 @@
-let colors = ['red', 'green', 'blue']
-let counter = 0;
-let div_id;
+// let colors = ['red', 'green', 'blue']
+// let counter = 0;
+// let div_id;
 let intervalId ;
 
 // let changeColor = function (){

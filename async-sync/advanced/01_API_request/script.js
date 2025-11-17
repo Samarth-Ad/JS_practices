@@ -38,10 +38,12 @@ let data2;
 
 xhr2.onreadystatechange = function () {
     if (xhr2.readyState === 4) {
+        // JSONify
         data2 = JSON.parse(this.responseText);
         
         try{
             window.document.getElementById("profileImage").src = data2.avatar_url;
+            console.log("Fetched from Github")
         }
         catch (error) {
             console.log(error);
@@ -50,6 +52,7 @@ xhr2.onreadystatechange = function () {
 
         try {
             window.document.getElementById("followers").textContent = data2.followers
+            console.log("Fetched from Github")
         }
         catch (error){
             console.log(error);

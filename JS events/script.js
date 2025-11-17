@@ -20,7 +20,7 @@
 // // One of the images from list was invoked
 
 
-// // Event propagation : Capturing = false means from global to global's instance event'll be captured 
+// // Event propagation : Capturing = true means from global to global's instance event'll be captured 
 // document.getElementById('images').addEventListener('click',function(e){
 //     // alert("This is a moneky")
 //     console.log("One of the images from list was invoked")
